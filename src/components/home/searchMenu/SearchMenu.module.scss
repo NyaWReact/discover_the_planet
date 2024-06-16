@@ -1,0 +1,171 @@
+
+.search_menu {
+  width: 90vw;
+  max-width: 1100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  gap: 34px;
+  padding: 0px 10px;
+  border-radius: 2px;
+
+  .appear {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color:black;
+    
+    top: -100px;
+    transition: top 0.4s;
+    
+    font-size: 24px;
+
+    .radio {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+    }
+
+    .choice {
+      text-transform: uppercase;
+      
+      color: black;
+      margin-left: 10px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      width: 120px;
+      font-size: 24px;
+      caret-color: transparent;
+    }
+    
+    label {
+      font-size: 20px;
+    }
+
+  }
+  
+  .down {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    padding: 2px;
+    background-color: #fff;
+    
+    border-radius: 50%;
+    color: #000000;
+    box-shadow: 1px 1px 3px 0px;
+    transition: background 0.3s;
+
+    svg {
+      padding-top: 2px;
+    }
+    &:hover {
+      background-color: rgb(193, 58, 58);
+
+    }
+    &:hover svg{
+      position: relative;
+      animation: down_string 0.3s forwards;
+
+    }
+
+  }
+
+}
+.appear_block {
+  animation: block_appear 0.5s forwards;
+}
+
+.disappear_block {
+  animation: block_disappear 0.3s forwards;
+}
+
+.search_open {
+  animation: menu_open 0.7s forwards;
+}
+.search_close {
+  animation: menu_close 0.7s forwards 1s;
+}
+
+@keyframes menu_open {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  50% {
+    width: 90vw;
+    height: 1px;
+  } 
+  100% {
+    width: 90vw;
+    height: 120px;
+  }
+}
+
+@keyframes menu_close {
+  0% {
+    width: 90vw;
+    height: 120px;
+  }
+  50% {
+    width: 90vw;
+    height: 1px;
+  } 
+  100% {
+    width: 0;
+    height: 1px;
+  }
+}
+
+@keyframes block_appear {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes block_disappear {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes down_string {
+  0% {
+    top: 0px;
+    background-color: white;
+  }
+  50% {
+    opacity: 0;
+    top: 20px;    
+  }
+  75% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    color: white;
+    top: 0px;
+  }
+}
+

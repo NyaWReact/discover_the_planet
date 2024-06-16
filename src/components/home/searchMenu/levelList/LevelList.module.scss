@@ -1,0 +1,19 @@
+.list {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 30px;
+  height: 110px;
+  
+  p {
+    padding-left: 10px;
+    border-radius: 2px;
+    transition: background 0.2s;
+    &:hover {
+      background-color: #c7c6c6;
+    }
+  }
+
+  
+  scrollbar-color: rgb(167, 167, 167) rgb(228, 227, 227) ;
+}

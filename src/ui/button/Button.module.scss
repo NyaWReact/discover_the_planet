@@ -1,0 +1,44 @@
+.button {
+  display: block;
+  background-color: rgb(193, 58, 58);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  overflow: hidden;
+
+  button {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    top: 0;
+    transition: top 0.3s, opacity 0.3s;
+    text-transform: uppercase;
+    }
+  &:hover button{
+    animation: button 0.3s ease-in;
+  }
+}
+
+@keyframes button {
+  0% {
+    top: 0;
+    opacity:1;
+  }
+  33% {
+    top: 50px;
+    opacity: 0;
+  }
+  66% {
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity:1;
+  }
+}
