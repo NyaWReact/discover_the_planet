@@ -12,8 +12,6 @@ interface SearchMenuProps{
   isAnimation: boolean
   isShow: boolean
 }
-
-
 const SearchMenu: React.FC<SearchMenuProps>  = memo(({isAnimation, isShow}) => {
   const [isLocation, setIsLocation] = useState(false)
   const [LocationValue, setLocationValue] = useState('Location')

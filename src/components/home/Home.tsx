@@ -21,7 +21,7 @@ const Home = () => {
   }, [count])
 
   
-  console.log(123);
+
   
   const toggleShow = () => {
     
