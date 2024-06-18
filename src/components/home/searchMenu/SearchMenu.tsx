@@ -11,17 +11,28 @@ import { LevelList } from './levelList/LevelList'
 interface SearchMenuProps{
   isAnimation: boolean
   isShow: boolean
+  setIsCards: React.Dispatch<React.SetStateAction<boolean>>
+  setIsAnimation: React.Dispatch<React.SetStateAction<boolean>>
+  setIsShow: React.Dispatch<React.SetStateAction<boolean>>
 }
-const SearchMenu: React.FC<SearchMenuProps>  = memo(({isAnimation, isShow}) => {
+const SearchMenu: React.FC<SearchMenuProps>  = memo(({isAnimation, isShow, setIsCards, setIsAnimation, setIsShow}) => {
   const [isLocation, setIsLocation] = useState(false)
   const [LocationValue, setLocationValue] = useState('Location')
   const [isLevel, setIsLevel] = useState(false)
   const [levelValue, setLevelValue] = useState('Route level')
-  console.log(5%2);
   
+  const handleSubmit = (event: React.SyntheticEvent) => {
+    event.preventDefault()
+    setIsAnimation(false)
+    setTimeout(() => {
+      setIsShow(false)
+      setIsCards(true) 
+    }, 1800)
+  }
+
   return (
     <>
-      {isShow && <form className={clsx(styles.search_menu, isAnimation ? styles.search_open : styles.search_close)}>
+      {isShow && <form className={clsx(styles.search_menu, isAnimation ? styles.search_open : styles.search_close)} onSubmit={handleSubmit}>
       <Appear time={300}  isAnimation={isAnimation}>
         <HiOutlineMapPin />
         <input value={LocationValue} className={styles.choice}></input>
@@ -51,7 +62,7 @@ const SearchMenu: React.FC<SearchMenuProps>  = memo(({isAnimation, isShow}) => {
         <input type="radio" name='count' className={styles.radio}/>
       </Appear>
       <Appear time={800} isAnimation={isAnimation}>
-        <Button onClick={() => {}}>SEArch</Button>
+        <Button>Search</Button>
       </Appear>
       </form>} 
     

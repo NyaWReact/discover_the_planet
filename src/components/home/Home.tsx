@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import styles from './Home.module.scss'
 import { Button } from '../../ui/button/Button'
 import { SearchMenu } from './searchMenu/SearchMenu'
+import { Cards } from './cards/Cards'
 
 const Home = () => {
   const [count, setCount] = useState(1)
   const [isShow, setIsShow] = useState(false)
   const [isAnimation, setIsAnimation] = useState(false)
-
+  const [isCards, setIsCards] = useState(false)
   // change bg
   useEffect (() => {
     const int = setInterval(() => {
@@ -20,11 +21,7 @@ const Home = () => {
     }, 5000, [])
   }, [count])
 
-  
-
-  
   const toggleShow = () => {
-    
     if (isShow) { //close
       console.log('close');
       setIsAnimation(false)
@@ -35,12 +32,11 @@ const Home = () => {
       console.log('open');
       setIsShow(true) 
       setIsAnimation(true)
-
     }
   }
 
   
-  
+
   return (
     <>
       <div className={styles.overlay} /> 
@@ -51,9 +47,9 @@ const Home = () => {
         </div>
         <h1>PLANET</h1>
         <Button onClick={toggleShow}> TO BEGIN</Button>
-        
-        <SearchMenu isShow={isShow} isAnimation={isAnimation}/>
+        <SearchMenu isShow={isShow} isAnimation={isAnimation} setIsCards={setIsCards} setIsAnimation={setIsAnimation} setIsShow={setIsShow}/>
       </div>
+      {isCards && <Cards/>}
       <video src={`/videoBG/${count}.mp4`} autoPlay muted loop className={styles.video} />
     </>
   )

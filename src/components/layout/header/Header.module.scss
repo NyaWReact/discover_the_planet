@@ -22,12 +22,10 @@ header {
   .menu {
     display: flex;
     align-items: center;
-    gap: 24px;
-    font-size: 24px;
+    gap: 1.5rem;
+    font-size: 1.5rem;
 
     .first_logo {
-      
-
         padding-top: 6px;
 
     }
@@ -41,8 +39,8 @@ header {
       background-color: #fff;
       
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 }

@@ -1,0 +1,130 @@
+[
+  {
+      "country": "China",
+      "city": "Beijing",
+      "image": "images/china.jpg",
+      "description": "Beijing, the capital of China, is known for its modern architecture as well as ancient sites such as the grand Forbidden City complex, the imperial palace during the Ming and Qing dynasties.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "China",
+      "city": "Shanghai",
+      "image": "images/china.jpg",
+      "description": "Shanghai, China’s biggest city, is a global financial hub. Its heart is the Bund, a famed waterfront promenade lined with colonial-era buildings.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "China",
+      "city": "Xi'an",
+      "image": "images/china.jpg",
+      "description": "Xi'an, known for the Terracotta Army of Emperor Qin Shi Huang, offers a rich historical experience and is one of the oldest cities in China.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "Japan",
+      "city": "Tokyo",
+      "image": "images/japan.jpg",
+      "description": "Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "Japan",
+      "city": "Kyoto",
+      "image": "images/japan.jpg",
+      "description": "Kyoto, once the capital of Japan, is a city on the island of Honshu, famous for its classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines, and traditional wooden houses.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "Japan",
+      "city": "Osaka",
+      "image": "images/japan.jpg",
+      "description": "Osaka is a large port city and commercial center known for its modern architecture, nightlife, and hearty street food.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "Japan",
+      "city": "Hiroshima",
+      "image": "images/japan.jpg",
+      "description": "Hiroshima, a city that was largely destroyed by an atomic bomb during WWII, is known for its Peace Memorial Park, dedicated to the victims of the atomic bombing.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "Italy",
+      "city": "Rome",
+      "image": "images/italy.jpg",
+      "description": "Rome, Italy’s capital, is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture, and culture on display.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "Italy",
+      "city": "Venice",
+      "image": "images/italy.jpg",
+      "description": "Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "Italy",
+      "city": "Florence",
+      "image": "images/italy.jpg",
+      "description": "Florence, capital of Italy’s Tuscany region, is home to many masterpieces of Renaissance art and architecture.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "Italy",
+      "city": "Milan",
+      "image": "images/italy.jpg",
+      "description": "Milan, a metropolis in Italy's northern Lombardy region, is a global capital of fashion and design.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "France",
+      "city": "Paris",
+      "image": "images/france.jpg",
+      "description": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy, and culture.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "France",
+      "city": "Lyon",
+      "image": "images/france.jpg",
+      "description": "Lyon, a city in France’s Auvergne-Rhône-Alpes region, sits at the junction of the Rhône and Saône rivers and is known for its historical and architectural landmarks.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "France",
+      "city": "Marseille",
+      "image": "images/france.jpg",
+      "description": "Marseille, a port city in southern France, has been a crossroads of immigration and trade since its founding by the Greeks circa 600 B.C.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  },
+  {
+      "country": "France",
+      "city": "Nice",
+      "image": "images/france.jpg",
+      "description": "Nice, located on the French Riviera, is known for its stunning Mediterranean coastline and vibrant arts scene.",
+      "tour_type": "single",
+      "difficulty": "middle"
+  },
+  {
+      "country": "France",
+      "city": "Bordeaux",
+      "image": "images/france.jpg",
+      "description": "Bordeaux, a port city on the Garonne River in southwestern France, is the center of a famed wine-growing region.",
+      "tour_type": "cooperative",
+      "difficulty": "easy"
+  }
+]
